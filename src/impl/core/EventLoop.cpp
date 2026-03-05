@@ -61,7 +61,9 @@ void EventLoop::Stop() {
 	uv_async_send(m_async);
 
 	// Stop the loop
-	uv_stop(m_loop);
+	Post([this]() {
+		uv_stop(m_loop);
+	});
 
 	if (m_thread.joinable()) {
 		m_thread.join();
