@@ -36,7 +36,7 @@ jobs:
             sm_branch: master
 
           - sm_version: "1.12"
-            sm_branch: "1.11-dev"
+            sm_branch: "1.12-dev"
 
           - os: windows-latest
             os_short: win-latest
