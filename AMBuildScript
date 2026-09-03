@@ -107,7 +107,7 @@ class ExtensionConfig(object):
 			cxx.cflags += ['-Wno-sometimes-uninitialized']
 			cxx.cxxflags += ['-Wno-implicit-exception-spec-mismatch']
 
-		cxx.cxxflags += ['-std=c++17']
+		cxx.cxxflags += ['-std=c++20']
 
 		cxx.cxxflags += [
 			'-fno-threadsafe-statics',
@@ -145,7 +145,7 @@ class ExtensionConfig(object):
 		cxx.cflags += ['/W3']
 
 		cxx.cxxflags += [
-			'/std:c++17',
+			'/std:c++20',
 			'/EHsc',
 			'/GR-',
 			'/TP',
