@@ -27,7 +27,7 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - ubuntu-22.04
+          - ubuntu-24.04
           - windows-latest
         sm_version:
           - "1.12"
@@ -46,8 +46,8 @@ jobs:
           - os: ubuntu-latest
             os_short: ubuntu-latest
 
-          - os: ubuntu-22.04
-            os_short: ubuntu-22.04
+          - os: ubuntu-24.04
+            os_short: ubuntu-24.04
 
     steps:
       - name: Prepare env
